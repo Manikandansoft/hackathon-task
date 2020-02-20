@@ -1,0 +1,18 @@
+Batman:
+First line of input contains an integer  the number of test cases.
+
+We approached the binary search.
+
+For each test case:
+
+The first will check block size (10*10)
+
+Figure out initial position (x,y) and ending position(x1,y1)
+
+Move the  steps are (U, R, UR, UL)
+
+initial step UR to first posiotn (x,y) = (0,0) while reached the final position
+
+Get the optimization by (x1+(x2-x1))/2 & (y1 + (y2 - y1)
+
+continue the process untill reach the goal.
