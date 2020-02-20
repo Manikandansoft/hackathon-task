@@ -1,0 +1,19 @@
+<form name="radioButton">
+  <div>
+    Text box
+  </div>
+  <div>
+    <input type="text" name="textBox" [(ngModel)]="textBox" (ngModelChange)="changeType()">
+    <div class="error" *ngIf="validationErrorFlag" >
+    {{validionErrorMessage}}
+    </div>
+  </div>
+  <div>
+    <input type="radio" value="number" name="textBoxType" [(ngModel)]="textBoxType" (ngModelChange)="changeType()">
+    Numbers
+    <input type="radio" value="alphabets" name="textBoxType" [(ngModel)]="textBoxType" (ngModelChange)="changeType()"> 
+    Letters
+    <input type="radio" value="password" name="textBoxType" [(ngModel)]="textBoxType" (ngModelChange)="changeType()"> 
+    password
+  </div>
+</form>
